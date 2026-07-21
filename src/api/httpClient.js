@@ -1,8 +1,7 @@
 import axios from 'axios'
 
 const httpClient = axios.create({
-  //baseURL: process.env.VUE_APP_API_BASE_URL || 'http://localhost:8081/api',
-  baseURL: 'https://projeto-paripassu-backend.onrender.com/api',
+  baseURL: process.env.VUE_APP_API_BASE_URL || 'http://localhost:8081/api',
   headers: {
     'Content-Type': 'application/json'
   }
